@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Hangman from './components/HangMan';
+import Header from './components/Header';
+import Main from './components/Main';
+import Word from './components/Word';
+import { ApplicationContext } from './context/ApplicationContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ApplicationContext>
+        <Header></Header>
+        <Main></Main>
+      </ApplicationContext>   
     </div>
   );
 }
