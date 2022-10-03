@@ -28,8 +28,6 @@ const Main = () => {
 
   return (
     <div>
-
-      {console.log(life)}
       {!life == 0 ? <div><CustomProgressBar bgcolor={bgcolor} completed={progreesBarLifes}></CustomProgressBar></div>
         : <div>
           <CustomModal></CustomModal>

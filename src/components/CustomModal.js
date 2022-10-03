@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,18 +9,15 @@ const CustomModal = (props) => {
     const [show, setShow] = useState(true);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const changeState = () => setPreserveGameState((prevState) => !prevState);
+    const { modalContent, setPreserveGameState } = useApplicationContext();
+    const reloadPage = window.location.reload(true)
 
-    const { modalContent} = useApplicationContext();
 
-    
+
 
 
     return (<>
-
-        {/* <Button variant="primary" onClick={handleShow}>
-            Launch demo modal
-        </Button> */}
 
         <Modal show={show} onHide={handleClose} animation={false}>
             <Modal.Header closeButton>
@@ -31,7 +28,7 @@ const CustomModal = (props) => {
                 <Button variant="secondary" onClick={handleClose}>
                     Exit
                 </Button>
-                <Button variant="primary" onClick={handleClose}>
+                <Button variant="primary" onClick={reloadPage}>
                     New Game
                 </Button>
             </Modal.Footer>

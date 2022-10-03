@@ -7,7 +7,7 @@ const ALPHABET = ["А", "Б", "В", "Г", "Д", "Е", "Ж",
 const WORDS = ["ИМУНОГЛОБОЛИН", "ЖИВОТНОВЪДСТВО", "ФЕНОЛФТАЛИН", "КАСЕТОФОН", "ТЕТРАХИДРОКАНАБИНОЛ",
     "ЕКСЦЕНТРИЦИТЕТ", "БЕСЕНИЦА", "КАЛАБАЛЪК", "СЪДОМИЯЛНА", "КРИВОКРАЧЕНЕ", "КАЛПАЗАНИН", "ПРЕДОДВРАТЯВАМ", "НЕПОДВЪРЗАН", "КАРИКАТУРА"];
 
-const IMAGES = ["","","http://www.ilearngreek.com/images/p.png","http://www.ilearngreek.com/images/1.png","http://www.ilearngreek.com/images/3.png","http://www.ilearngreek.com/images/4.png","http://www.ilearngreek.com/images/5.png","http://www.ilearngreek.com/images/6.png","http://www.ilearngreek.com/images/7.png"];
+const IMAGES = ["", "http://www.ilearngreek.com/images/p.png", "http://www.ilearngreek.com/images/1.png", "http://www.ilearngreek.com/images/3.png", "http://www.ilearngreek.com/images/4.png", "http://www.ilearngreek.com/images/5.png", "http://www.ilearngreek.com/images/6.png", "http://www.ilearngreek.com/images/7.png"];
 
 
 export { ALPHABET, WORDS, IMAGES };

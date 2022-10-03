@@ -1,6 +1,5 @@
 
 import './App.css';
-import Hangman from './components/HangMan';
 import Header from './components/Header';
 import Main from './components/Main';
 import Word from './components/Word';

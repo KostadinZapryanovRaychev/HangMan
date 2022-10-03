@@ -10,7 +10,6 @@ const Letters = () => {
     return (
 
         <div>
-            {console.log(letters)}
             {letters.map((letter, index) => {
                 return <button key={index} onClick={() => makeAguess(currentWord, letter, setCorrectGuesses, correctGuesses, life, setLife)}> {letter}</button>
             }
